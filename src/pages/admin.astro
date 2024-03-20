@@ -9,8 +9,9 @@
     </head>
     <body>
         <!-- Dashboard script-->
-        <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"
-        ></script>
+        <script
+            is:inline
+            src="https://unpkg.com/decap-cms@^3.1.2/dist/decap-cms.js"></script>
         <!-- netlify identity -->
         <script
             is:inline
@@ -23,10 +24,11 @@
         </script>
 
         <!-- CSS in preview panel -->
-        <script>
+        <script is:inline>
             // @ts-expect-error CMS is defined globally
             // eslint-disable-next-line
-            CMS.registerPreviewStyle("/cms.css");
+            CMS.registerPreviewStyle("src/assets/styles/tailwind.css");
+            console.log("cms");
         </script>
         <!-- Only showing body in preview panel -->
         <!-- <script src="@utils/preview.js"></script> -->
