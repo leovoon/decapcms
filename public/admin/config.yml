@@ -1,0 +1,25 @@
+backend:
+  name: decapcms
+  repo: leovoon/decapcms #replace with your github repo
+  branch: main
+
+local_backend: true
+
+publish_mode: editorial_workflow
+media_folder: /src/assets/images
+public_folder: /src/assets/images
+site_url: "https://astro-decapcms.netlify.app" # your site name
+
+collections:
+  - name: annoucement
+    label: Annoucement
+    folder: src/content/annoucement
+    create: true
+    format: frontmatter
+    preview_path: annoucement/{{slug}}
+    fields:
+      - { name: title, label: Title }
+      - { name: date, label: Date, widget: datetime }
+      - { name: image, label: Image, widget: image }
+      - { label: "Publish", name: "isPublish", widget: "boolean", default: true}
+      - { label: "Draft", name: "isDraft", widget: "boolean", default: false }
