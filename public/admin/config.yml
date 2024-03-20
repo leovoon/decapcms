@@ -1,5 +1,5 @@
 backend:
-  name: decapcms
+  name: git-gateway
   repo: leovoon/decapcms #replace with your github repo
   branch: main
 
