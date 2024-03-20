@@ -8,7 +8,7 @@ local_backend: true
 publish_mode: editorial_workflow
 media_folder: /src/assets/images
 public_folder: /src/assets/images
-site_url: "https://astro-decapcms.netlify.app" # your site name
+site_url: "https://decapcms-astro.netlify.app" # your site name
 
 collections:
   - name: annoucement
